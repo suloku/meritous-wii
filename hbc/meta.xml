@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <app>
-	<name> Meritous </name>
+	<name>Meritous </name>
 	<coder>Lancer-X/ASCEAI</coder>
-	<version>1.2 Wii R1</version>
-<short_description> Dungeon crawl game </short_description>
+	<version>1.2 Wii R2</version>
+<short_description>Dungeon crawl game </short_description>
 <long_description>http://www.asceai.net/meritous/
 
-MERITOUS 1.2 Wii R1
+MERITOUS 1.2 Wii R2
 by suloku
 
 MERITOUS v 1.2
@@ -71,7 +71,5 @@ Cheats:
 ______
 
 "Those who seek power, should have been granted with a great sense of coordination to "trigger" a new source of energy".
-
-Note: this isn't a cheat I added or that's in the pc game, but some debug code I thought could work and be fun as a cheat.
- </long_description>
+</long_description>
 </app>
