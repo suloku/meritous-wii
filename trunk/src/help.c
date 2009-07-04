@@ -72,10 +72,17 @@ void InitHelp()
 	hlp = malloc(sizeof(struct help_file));
 	hlp->sections = 0;
 	
+#ifdef HW_NINTENDO
+	fp = fopen("dat/d/helpfile_wii.txt", "r");
+#else	
 	fp = fopen("dat/d/helpfile.txt", "r");
+#endif
 	while (!feof(fp)) {
 		fgets(linebuf, 79, fp);
 		if (linebuf[strlen(linebuf)-1] == '\n')
+			linebuf[strlen(linebuf)-1] = 0;
+
+		if (linebuf[strlen(linebuf)-1] == '\r')
 			linebuf[strlen(linebuf)-1] = 0;
 			
 		if (linebuf[0] == '\'') {

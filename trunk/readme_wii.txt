@@ -1,6 +1,19 @@
-Meritous 1.2 Wii port R1 by suloku
+Meritous 1.2 Wii port R2 by suloku
 __________________________________
-29-june-2009
+30-june-2009
+
+Changelog:
+_________
+
+R2:
+
+-Solved the problem with accessing the help file. The code wasn't parsing the newline character '\r'.
+-Added wii controls to help file (helpfile_wii.txt when building for wii).
+-Changed the message given when starting a new game for the wii build.
+
+R1:
+
+-initial release
 
 Original Meritous:
 _________________
@@ -79,8 +92,6 @@ I haven't tested myself, but it should work if run from a usb device from homebr
 Known bugs:
 __________
 
--Help isn't working. You can't access the help subscreens and the final characters display weird. I'll try to fix that.
-
 -For some reason there's some code regarding the title screen that will code dump. I tried backtracing it but I couldn't see the failure, so that part of code only compiles for the pc version. Anyway I'm still yet to notice what that code does to the game, so it doesn't affect gameplay.
 
 
@@ -89,7 +100,7 @@ ____________
 
 -Only modified files are: levelblit.c, ending.c and help.c
 -The source should compile exactly just like original 1.2 source when using Makefile.pc.
--With the current sdl-wii release you can't compile the source, as there are some audio problems. Also the PAL display isn't fixed.
+-With the current sdl-wii release you can't compile the source, as there are some audio problems. Also the PAL display isn't fixed. I had solved that myself to just find that afterwars sdl-wii's svn got the same changes.
 
 Compiled with:
 _____________

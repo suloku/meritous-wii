@@ -2720,7 +2720,12 @@ void SpecialTile(int x, int y)
 		default:
 			if (first_game) {
 				if (otext < 60) {
+				
+				#ifdef HW_NINTENDO
+					sprintf(message, "Press H, 1 (wiimote), - (classic) or Z (gamecube)  to read the help file");
+				#else
 					sprintf(message, "Press H to read the help file");
+				#endif
 					otext++;
 				}
 			}
